@@ -15,3 +15,44 @@
 // string может занимать разное колличество памяти
 // при необходимости объект типа char можно преобразовать в объект типа int, а объект типа int в double.
 // Бит то единица памяти компьютера, которая может хранить либо 0 либо 1
+
+int main() {
+
+	
+
+	cout << "Введите свое имя адресата:\n";
+	string first_name; // first_name -- переменная типа string
+	cin >> first_name; //считываем символы в first_name
+	string plea = "Усталый вылет. Пули будут стучать по бронеспинке кресла и будить нас";
+	cout << "Дорогой " << first_name << ", " << plea << "\n";
+	cout << "Введите имя другого адресата\n";
+	string second_name;
+	cin >> second_name;
+	cout << "Давно ли ты спал? " << second_name << "\n";
+
+	char friend_sex = 0;
+
+	cout << "Введите значение m если вы мужчина либо f если женщина \n";
+	cin >> friend_sex;
+
+	if (friend_sex == 'm')
+		cout << "Если ты увидишь " << first_name << "пожалуйста, перезвони мне\n";
+	if (friend_sex == 'f')
+		cout << "Если ты увидишь " << second_name << " попроси его перезвонить мне\n";
+
+	cout << "Введите возраст";
+
+	int age;
+
+	cin >> age;
+
+	if (age <= 0)
+		if (age >= 110)
+			string simple_error = "Ты шутишь!";
+			cout << simple_error;
+	else
+			cout << "Я слышал, ты только что отметил день рождения и тебе исполнилось " << age << " лет";
+
+
+return 0;
+}
