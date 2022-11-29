@@ -1,5 +1,8 @@
-#include "std_lib_facilities.h"
 #include <vector>
+#include <iostream>
+
+
+using namespace std;
 
 int main()
 {
@@ -11,7 +14,7 @@ int main()
 
 	cout << "Количество слов: " << words.size() << '\n';
 
-	sort(words); // сортировка слов
+	//sort(words); // сортировка слов
 
 	for (int i = 0; i<words.size(); ++i)   // удаляет повторяющиеся слова
 		if (i==0 || words[i-1] != words[i])
