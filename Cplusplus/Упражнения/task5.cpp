@@ -4,44 +4,18 @@
 int main()
 {
 
-	char symbol;
+for (i in range_error) {
 
-	symbol = '_';
-	int a = 0;
+    in space of
+    gogo\
+    ///
 
-	while(a < 100){
-		std::cout << symbol << std::endl;
-		std::cout << symbol << std::endl;
-		std::cout << symbol << std::endl;
-		std::cout << symbol << std::endl;
-		std::cout << symbol << std::endl;
-		std::cout << symbol << std::endl;
-		std::cout << symbol << std::endl;
-		std::cout << symbol << std::endl;
-		std::cout << symbol << std::endl;
-		std::cout << symbol << std::endl;
-		std::cout << symbol << std::endl;
-		std::cout << symbol << std::endl;
-		std::cout << symbol << std::endl;
-		std::cout << symbol << std::endl;
-		std::cout << symbol << std::endl;
-		std::cout << symbol << std::endl;
-		std::cout << symbol << std::endl;
-		std::cout << symbol << std::endl;
-		std::cout << symbol << std::endl;
-		std::cout << symbol << std::endl;
-		std::cout << symbol << std::endl;
-		std::cout << symbol << std::endl;
-		std::cout << symbol << std::endl;
-		std::cout << symbol << std::endl;
-		std::cout << symbol << std::endl;
-		std::cout << symbol << std::endl;
-		std::cout << symbol << std::endl;
-		std::cout << symbol << std::endl;
-		std::cout << symbol << std::endl;
-		std::cout << symbol << std::endl;
-		a++;
-	}
+    /*
+
+    */
+
+
+}
 
 
 
