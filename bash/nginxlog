@@ -1,0 +1,20 @@
+#!/bin/bash
+LOG_FILE="access.log"
+URL='/remont/santehnika'
+IP_COUNT=()
+# шо угодно
+while read line; do
+  if [[ $line =~ $URL ]]; then
+    ip=$(echo $line | awk '{ print $5 }')
+    if [[ " ${IP_COUNT[@]} " =~ " ${ip} " ]]; then
+      index=`expr ${IP_COUNT[@]/$ip//} - 1`
+      IP_COUNT[$index+1]=$((IP_COUNT[$index+1]+1))
+    else
+      IP_COUNT+=($ip 1)
+    fi
+  fi
+done < "$LOG_FILE"
+count=${#IP_COUNT[@]}
+for ((i=count-1;i>=0;i-=2)); do
+  printf "%s %d\n" ${IP_COUNT[$i-1]} ${IP_COUNT[$i]}
+done | sort -rnk2 | head -n 10
