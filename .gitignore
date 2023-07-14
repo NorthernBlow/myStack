@@ -1,3 +1,8 @@
 moderngl/env/
 moderngl/env/*
 /moderngl/env/*
+venv/
+env/
+*env/
+*venv/
+.env

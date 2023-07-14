@@ -13,3 +13,15 @@ def all_blog(id: int)
 ```
 
 то первая функция сработает нормально, однако если сделать наоборот, то валидироваться ничего не будет в таком случае
+
+### Tag[s]
+
+```python
+from typing import Optional #не забываем
+
+
+@app.get('/blog/all', tags=['blog'])
+def get_all_blogs(page, page_size: Optional[int] = None):
+	return {'message': f'this is a size {page_size} of {page}'}
+```
+теги нужны для того чтобы в Swagger (localhost/docs) как-то отсортировать всю эту хтонь.
